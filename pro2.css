@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+   
+}
+#head-bar{
+font-size: 20px;
+    color: aliceblue;
+    background: linear-gradient(to right,black,white);
+   
+
+}
+#head-bar h3{
+    padding: 20px;
+    width: 50px;
+    font-family: "voyag";
+    
+}
+
+#head-bar #link{
+    display: flex;
+    gap: 1px;
+    position: absolute;
+    left: 30%;
+    top:5%;
+    
+}
+    
+   
+     
+
+#link a{
+    text-decoration: none;
+    font-weight: 800;
+    font-size: large;
+    font-family: "voyage";
+    color: black;
+    right: 80%;
+    padding-left: 80px;
+    text-align:center;
+
+  
+}
+#link a:hover{
+    color:;
+    cursor: pointer;
+    text-shadow: rgb(31, 30, 30) 2px 0, rgb(110, 110, 108) 2px 0;
+    
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+    background: linear-gradient(to right,black,white);
+}
+.left-text{
+    flex-basis: 30%;
+ 
+}
+.heading{
+    font-size:2.5rem;
+    color: aliceblue;
+    margin-left: 80px;
+    text-align: center;
+
+}
+.subheading {
+    color:#ddd;
+    margin-top:30px;
+    margin-left: 80px;
+    text-align: center;
+    font-size:1rem;
+}
+
+.gallery{
+    flex-basis: 70%;
+    display: grid;
+    gap: 9px;
+    padding: 5%;
+   
+
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 120px;
+   
+}
+ .box{
+    
+    background-size: cover;
+    background-position: top;
+    color: white;
+    font-weight: 10px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+background-color: #222;
+background-blend-mode: lighten;
+transition: all 1s ease-in-out;
+}
+.box:hover{
+    background-color:;
+    background-position: center;
+    box-shadow: 0 0 30px black;
+    cursor: pointer;
+}
+
+
+.row2{
+    grid-row: span 2/ auto;
+}
+.col2{
+    grid-column: span 2/ auto;
+}
